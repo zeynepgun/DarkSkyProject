@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-10T20:24:03.240Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4473940000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.darksky.stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Lowest and Highest Temperatures",
+        "description": "",
+        "id": "darksky-weather-check;lowest-and-highest-temperatures",
+        "after": [
+          {
+            "result": {
+              "duration": 100964000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.darksky.stepdefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10099000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on darksky homepage",
+            "match": {
+              "location": "com.darksky.stepdefinitions.HomePageSD.verifyTitle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 259732000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter the location in the location field",
+            "match": {
+              "location": "com.darksky.stepdefinitions.HomePageSD.EnterTheLocation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120925000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the search button",
+            "match": {
+              "location": "com.darksky.stepdefinitions.HomePageSD.ClickSearchBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158106000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see the lowest and highest Temperatures",
+            "match": {
+              "location": "com.darksky.stepdefinitions.HomePageSD.VerifyLowestAndHighestTemp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@homepage"
+          }
+        ]
+      }
+    ],
+    "name": "DarkSky Weather Check",
+    "description": "",
+    "id": "darksky-weather-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HomePage.feature",
+    "tags": [
+      {
+        "name": "@homepage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
